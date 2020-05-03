@@ -1,19 +1,18 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
+import { Container } from 'native-base';
+import Auth from './src/screens/Auth';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Hola Roger, desde el mas alla</Text>
-    </View>
+    <Container style={styles.container}>
+     <Auth />
+    </Container>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
